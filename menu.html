@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu — Rangohot Restaurant, Sangotedo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Core Typography */
+        body {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+        .sans-text {
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden m-0 p-0" style="background: radial-gradient(circle at 20% 30%, #FFFDF9 0%, #FFF3E3 60%, #FCECD7 100%) !important; color: #2D201A !important;">
+
+    <header class="w-full py-5 px-6 md:px-16 flex justify-between items-center border-b border-[#EADCC9]" style="background: transparent !important;">
+        <div class="flex flex-col">
+            <span class="text-2xl font-bold tracking-tight text-[#5C1909]">Rangohot</span>
+            <span class="sans-text text-[10px] tracking-[0.2em] uppercase text-[#8C766B] font-semibold -mt-1">Restaurant • Lagos</span>
+        </div>
+        <nav class="hidden md:flex space-x-10 sans-text font-medium text-sm text-[#5C1909]">
+            <a href="index.html#home" class="hover:opacity-70 transition">Home</a>
+            <a href="menu.html" class="opacity-70 border-b border-[#5C1909] pb-0.5">Menu</a>
+            <a href="index.html#about" class="hover:opacity-70 transition">About</a>
+            <a href="index.html#reservations" class="hover:opacity-70 transition">Reservations</a>
+        </nav>
+        <div>
+            <a href="index.html#reservations" class="sans-text text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-full hover:bg-black transition shadow-md" style="background-color: #5C1909 !important;">
+                Book A Table
+            </a>
+        </div>
+    </header>
+
+    <section class="max-w-4xl mx-auto px-6 pt-16 pb-12">
+        <span class="sans-text text-xs uppercase tracking-[0.2em] font-bold text-[#B24500] block mb-3">The Menu</span>
+        <h1 class="text-5xl md:text-6xl font-serif text-[#5C1909] leading-tight mb-4">
+            A small love letter<br>to Lagos eating.
+        </h1>
+        <p class="sans-text text-sm md:text-base text-[#6B564C] max-w-xl leading-relaxed">
+            Prices in Naira. All dishes are prepared fresh — give us a moment to do it right. Ask your server about today's specials.
+        </p>
+    </section>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24 space-y-16">
+
+        <section class="border-t border-[#EADCC9] pt-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-1">
+                    <span class="sans-text text-xs uppercase tracking-[0.2em] font-bold text-[#B24500] block mb-1">Section</span>
+                    <h2 class="text-2xl font-serif text-[#5C1909] font-bold mb-2">From the Oven</h2>
+                    <p class="sans-text text-xs text-[#8C766B] leading-relaxed">Baked all day, every day. The reason for our name.</p>
+                </div>
+                <div class="md:col-span-2 space-y-6 sans-text">
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909] inline-flex items-center gap-2">
+                                Signature Hot Bread <span class="bg-[#5C1909]/10 text-[#5C1909] text-[9px] uppercase font-bold tracking-wider px-2 py-0.5 rounded">House</span>
+                            </h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Soft, golden, fresh from the oven.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦1,200</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Coconut Bread</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Sweet, fragrant, made with fresh coconut milk.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦1,500</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Agege Bread Loaf</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Classic Lagos pull-apart loaf.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦1,000</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Bread & Akara Set</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Hot bread served with crispy black-eyed pea fritters.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦2,200</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-t border-[#EADCC9] pt-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-1">
+                    <span class="sans-text text-xs uppercase tracking-[0.2em] font-bold text-[#B24500] block mb-1">Section</span>
+                    <h2 class="text-2xl font-serif text-[#5C1909] font-bold mb-2">Grains & Mains</h2>
+                    <p class="sans-text text-xs text-[#8C766B] leading-relaxed">Smoky, slow-cooked, classic portions handled with absolute care.</p>
+                </div>
+                <div class="md:col-span-2 space-y-6 sans-text">
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Jollof Rice</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Classic smoky party-style jollof rice.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦2,500</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Fried Rice</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Delicious wok-tossed savory fried rice.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦2,500</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Special Fried Rice</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Richly loaded signature chef specialty fried rice.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦4,000</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Asun Rice</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Spicy native aromatic rice tossed with chopped peppered goat meat.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦3,500</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Native Rice</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Traditional palm-oil flavored rice enriched with local spices.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦2,500</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Coconut Rice</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Rich fragrant rice cooked cleanly in fresh coconut milk broth.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦2,500</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Rice and Beans</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Perfectly cooked classic dual-blend local favorite.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦2,500</span>
+                    </div>
+
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Spaghetti</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Perfectly cooked long pasta strings served to order.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦2,500</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">White Yam</h3>
+                            <p class="text-xs text-[#E65100] font-semibold mt-1">Available between 9 AM to 12 PM.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦1,500</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Yamarita <span class="bg-[#5C1909]/10 text-[#5C1909] text-[9px] uppercase font-bold tracking-wider px-2 py-0.5 rounded">2 Pieces</span></h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Egg-coated fried yam crisps cooked to perfect crispiness.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦2,000</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Porridge <span class="bg-[#5C1909]/10 text-[#5C1909] text-[9px] uppercase font-bold tracking-wider px-2 py-0.5 rounded">2 Scup</span></h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Rich, deeply-stewed local yam porridge mash.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦2,000</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Fish Sauce <span class="bg-[#5C1909]/10 text-[#5C1909] text-[9px] uppercase font-bold tracking-wider px-2 py-0.5 rounded">Per Scup</span></h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Savory fish stew reduction full of intense flavor additions.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦4,000</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Egg Sauce <span class="bg-[#5C1909]/10 text-[#5C1909] text-[9px] uppercase font-bold tracking-wider px-2 py-0.5 rounded">1 Scup</span></h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Lightly spiced scrambled egg sauce setup.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦2,000</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Ewagoni</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Incredibly tender mashed beans served with spicy palm oil sauce.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦900</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-t border-[#EADCC9] pt-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-1">
+                    <span class="sans-text text-xs uppercase tracking-[0.2em] font-bold text-[#B24500] block mb-1">Section</span>
+                    <h2 class="text-2xl font-serif text-[#5C1909] font-bold mb-2">Soups & Swallow</h2>
+                    <p class="sans-text text-xs text-[#8C766B] leading-relaxed">Slow-cooked the old way. Served with the swallow of your choice.</p>
+                </div>
+                <div class="md:col-span-2 space-y-6 sans-text">
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Egusi Soup</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Melon-seed soup with goat meat and stockfish.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦5,200</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Afang Soup</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Cross-river greens with periwinkle and assorted meat.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦5,500</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Pepper Soup (Catfish)</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Spicy, aromatic broth with fresh catfish.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦6,000</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Banga & Starch</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Delta palm-nut soup served with smooth starch.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦5,800</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-t border-[#EADCC9] pt-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-1">
+                    <span class="sans-text text-xs uppercase tracking-[0.2em] font-bold text-[#B24500] block mb-1">Section</span>
+                    <h2 class="text-2xl font-serif text-[#5C1909] font-bold mb-2">From the Grill</h2>
+                    <p class="sans-text text-xs text-[#8C766B] leading-relaxed">Charcoal-fired, brushed with house spice.</p>
+                </div>
+                <div class="md:col-span-2 space-y-6 sans-text">
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909] inline-flex items-center gap-2">
+                                Suya Beef Skewers <span class="bg-[#5C1909]/10 text-[#5C1909] text-[9px] uppercase font-bold tracking-wider px-2 py-0.5 rounded">Night Menu</span>
+                            </h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Spice-rubbed beef, sliced onions, fresh tomatoes.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦4,500</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Grilled Tilapia</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Whole tilapia in pepper marinade, served with plantain.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦7,500</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Asun (Peppered Goat)</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Smoky goat meat tossed in fiery sauce.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦5,800</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Chicken Wings Platter</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Dozen wings, choice of suya bbq, BBQ or honey-pepper.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦6,200</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-t border-[#EADCC9] pt-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-1">
+                    <span class="sans-text text-xs uppercase tracking-[0.2em] font-bold text-[#B24500] block mb-1">Section</span>
+                    <h2 class="text-2xl font-serif text-[#5C1909] font-bold mb-2">Drinks</h2>
+                    <p class="sans-text text-xs text-[#8C766B] leading-relaxed">Cold, fresh, no fuss.</p>
+                </div>
+                <div class="md:col-span-2 space-y-6 sans-text">
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Chapman</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">House-mixed, fruity and refreshing.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦1,800</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Fresh Zobo</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Hibiscus, ginger, pineapple.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦1,500</span>
+                    </div>
+                    <div class="flex justify-between items-start border-b border-[#EADCC9]/40 pb-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Tigernut Drink (Kunu Aya)</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Creamy, dairy-free, lightly spiced.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦1,600</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-[#5C1909]">Soft Drinks & Water</h3>
+                            <p class="text-xs text-[#6B564C] mt-1">Coke, Sprite, Fanta, still & sparkling water.</p>
+                        </div>
+                        <span class="font-bold text-sm text-[#5C1909]">₦600</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-full border-t border-[#EADCC9] px-6 md:px-16 py-16 sans-text text-sm text-[#6B564C]" style="background: transparent !important;">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <h3 class="font-serif text-xl text-[#5C1909] font-bold mb-4">Rangohot</h3>
+                <p class="text-xs leading-relaxed max-w-xs">A warm corner of Sangotedo serving freshly baked hot bread and Nigerian classics, made for sharing.</p>
+                <div class="flex gap-3 mt-4">
+                    <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-full border border-[#EADCC9] flex items-center justify-center text-[#5C1909] hover:bg-[#5C1909] hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="tel:09112111133" class="w-8 h-8 rounded-full border border-[#EADCC9] flex items-center justify-center text-[#5C1909] hover:bg-[#5C1909] hover:text-white transition"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-xs uppercase tracking-widest font-bold text-[#B24500] mb-4">Visit Us</h4>
+                <p class="text-xs font-semibold text-[#5C1909] mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Hotbread bus-stop, Lekki–Epe Expy, Sangotedo, Lagos</p>
+                <p class="text-xs"><i class="fas fa-clock mr-2"></i> Open daily · Closes 11 pm</p>
+            </div>
+            
+            <div>
+                <h4 class="text-xs uppercase tracking-widest font-bold text-[#B24500] mb-4">Explore</h4>
+                <ul class="text-xs space-y-2 font-medium text-[#5C1909]">
+                    <li><a href="index.html#menu" class="hover:underline">Menu Home</a></li>
+                    <li><a href="index.html#about" class="hover:underline">About</a></li>
+                    <li><a href="index.html#reservations" class="hover:underline">Reservations</a></li>
+                    <li><a href="https://wa.me/2349112111133" class="hover:underline text-green-600">WhatsApp Order</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto border-t border-[#EADCC9] pt-6 text-center text-[11px] text-[#8C766B]">
+            &copy; 2026 Rangohot Restaurant. All Rights Reserved. Built to sell.
+        </div>
+    </footer>
+
+</body>
+</html>

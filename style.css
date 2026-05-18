@@ -1,0 +1,244 @@
+/* Core Styling & Modern Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9f9f9;
+    --text-main: #111111;
+    --text-muted: #666666;
+    --accent-color: #000000;
+    --whatsapp-green: #25D366;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Header Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: var(--bg-primary);
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+nav .btn-nav {
+    background: var(--accent-color);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('hero-food-bg.jpg') no-repeat center center/cover;
+    background-color: #111; /* Fallback */
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+/* Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-primary {
+    background-color: var(--whatsapp-green);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #20ba5a;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: var(--text-main);
+}
+
+/* Quick Info Strip */
+.quick-info {
+    display: flex;
+    justify-content: space-around;
+    background: var(--bg-secondary);
+    padding: 20px 8%;
+    border-bottom: 1px solid #eaeaea;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.info-item {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Menu Grid */
+.menu-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.menu-card {
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    border: 1px solid #eee;
+}
+
+.menu-img-placeholder {
+    height: 200px;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-weight: 600;
+}
+
+.menu-details {
+    padding: 20px;
+}
+
+.menu-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.menu-details p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    height: 45px;
+    overflow: hidden;
+}
+
+.price {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Location & Contact */
+.location-section {
+    background: var(--bg-secondary);
+    padding: 60px 8%;
+    border-top: 1px solid #eaeaea;
+}
+
+.location-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.location-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.location-info h2 {
+    margin-bottom: 20px;
+}
+
+.location-info p {
+    margin-bottom: 15px;
+}
+
+.map-placeholder {
+    flex: 1;
+    min-width: 300px;
+    height: 250px;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: var(--accent-color);
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.2rem; }
+    .cta-buttons { flex-direction: column; gap: 10px; }
+    header { padding: 15px 5%; }
+}

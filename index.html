@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangohot Restaurant | Sangotedo, Lagos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Core Typography */
+        body {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+        .sans-text {
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        }
+
+        /* Infinite Ticker Text Marquee Settings */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .marquee-inner {
+            display: flex;
+            width: max-content;
+            animation: marquee 25s linear infinite;
+        }
+        .marquee-inner:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden m-0 p-0" style="background: radial-gradient(circle at 20% 30%, #FFFDF9 0%, #FFF3E3 60%, #FCECD7 100%) !important; color: #2D201A !important;">
+
+    <header class="w-full py-4 md:py-5 px-4 sm:px-6 md:px-16 flex flex-col md:flex-row justify-between items-center gap-4 border-b border-[#EADCC9]" style="background: transparent !important;">
+        <div class="w-full md:w-auto flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="text-xl md:text-2xl font-bold tracking-tight text-[#5C1909]">Rangohot</span>
+                <span class="sans-text text-[9px] md:text-[10px] tracking-[0.2em] uppercase text-[#8C766B] font-semibold -mt-0.5 md:mt-1">Restaurant • Lagos</span>
+            </div>
+            <div class="flex md:hidden gap-4 sans-text font-bold text-xs uppercase tracking-wider text-[#5C1909]">
+                <a href="menu.html" class="bg-[#5C1909]/10 px-3 py-2 rounded-lg text-[#5C1909] flex items-center gap-1">
+                    <i class="fas fa-utensils text-[10px]"></i> Menu
+                </a>
+                <a href="#about" class="px-1 py-2 opacity-80">About</a>
+            </div>
+        </div>
+
+        <nav class="hidden md:flex space-x-10 sans-text font-medium text-sm text-[#5C1909]">
+            <a href="#home" class="hover:opacity-70 transition">Home</a>
+            <a href="menu.html" class="hover:opacity-70 transition">Menu</a>
+            <a href="#about" class="hover:opacity-70 transition">About</a>
+            <a href="#reservations" class="hover:opacity-70 transition">Reservations</a>
+        </nav>
+
+        <div class="hidden sm:block">
+            <a href="#reservations" class="sans-text text-white text-[11px] md:text-xs font-bold uppercase tracking-wider px-4 md:px-6 py-2.5 md:py-3 rounded-full hover:bg-black transition shadow-md" style="background-color: #5C1909 !important;">
+                Book A Table
+            </a>
+        </div>
+    </header>
+
+    <div class="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-sm bg-white/90 backdrop-blur-md shadow-2xl border border-[#EADCC9] rounded-full py-2 px-3 flex justify-around items-center sans-text font-bold text-[11px] uppercase tracking-wide text-[#5C1909]">
+        <a href="#home" class="flex flex-col items-center gap-0.5 opacity-70 hover:opacity-100">
+            <i class="fas fa-home text-base"></i>
+            <span class="text-[9px]">Home</span>
+        </a>
+        <a href="menu.html" class="flex flex-col items-center gap-0.5 text-white bg-[#5C1909] px-4 py-2 rounded-full shadow-md">
+            <i class="fas fa-cutlery text-sm"></i>
+            <span class="text-[9px]">View Menu</span>
+        </a>
+        <a href="#reservations" class="flex flex-col items-center gap-0.5 opacity-70 hover:opacity-100">
+            <i class="fas fa-calendar-alt text-base"></i>
+            <span class="text-[9px]">Reserve</span>
+        </a>
+    </div>
+
+    <section id="home" class="min-h-[auto] lg:min-h-[85vh] px-4 sm:px-6 md:px-16 py-8 md:py-12 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-12 max-w-7xl mx-auto" style="background: transparent !important;">
+        <div class="flex-1 max-w-2xl order-2 lg:order-1 text-center lg:text-left">
+            <div class="flex items-center justify-center lg:justify-start gap-2 mb-3 md:mb-4">
+                <span class="w-6 md:w-8 h-[2px] bg-[#B24500]"></span>
+                <span class="sans-text text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold text-[#B24500]">Sangotedo • Est. Lagos</span>
+            </div>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif text-[#5C1909] leading-[1.2] lg:leading-[1.1] mb-4 md:mb-6">
+                Rich, smoky flavors, straight to your table.
+            </h1>
+            <p class="sans-text text-sm md:text-base lg:text-lg text-[#6B564C] mb-6 md:mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                A neighborhood kitchen on the Lekki-Epe Expressway serving up Nigeria's most loved dishes. From fire-cooked firewood jollof and sizzling suya to rich, slow-simmered soups — served hot, every day until 11 pm.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 md:gap-4 sans-text">
+                <a href="#reservations" class="text-white font-bold px-6 md:px-8 py-3.5 md:py-4 rounded-full text-center hover:opacity-90 transition shadow-md text-sm" style="background-color: #5C1909 !important;">
+                    Reserve A Table <i class="fas fa-arrow-right-long text-xs ml-1"></i>
+                </a>
+                <a href="https://wa.me/2349112111133" target="_blank" class="border border-[#5C1909] text-[#5C1909] font-bold px-6 md:px-8 py-3.5 md:py-4 rounded-full text-center hover:bg-[#5C1909] hover:text-white transition text-sm">
+                    Order on WhatsApp
+                </a>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 md:gap-6 mt-8 md:mt-12 pt-4 md:pt-6 border-t border-[#EADCC9]/60 sans-text text-[11px] md:text-xs text-[#8C766B] font-medium">
+                <span class="flex items-center gap-1.5"><i class="fas fa-star text-amber-500"></i> 5.0 on Google</span>
+                <span class="flex items-center gap-1.5"><i class="fas fa-clock text-[#B24500]"></i> Open until 11 pm</span>
+                <span class="flex items-center gap-1.5"><i class="fas fa-map-marker-alt"></i> Sangotedo, Lagos</span>
+            </div>
+        </div>
+        
+        <div class="flex-1 w-full flex justify-center lg:justify-end relative order-1 lg:order-2 px-2 sm:px-0">
+            <div class="relative w-full max-w-md lg:max-w-xl aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border border-[#EADCC9]">
+                <img src="hero.jpg" alt="Rangohot Hero Image" class="w-full h-full object-cover">
+            </div> 
+            <div class="absolute -bottom-4 left-4 lg:-left-4 p-4 lg:p-5 rounded-xl shadow-lg border border-[#EADCC9]/80 min-w-[140px] md:min-w-[180px]" style="background-color: #FFF9F2 !important;">
+                <span class="block text-2xl md:text-3xl font-serif font-bold text-[#5C1909]">11 yrs</span>
+                <span class="sans-text text-[9px] md:text-[10px] uppercase tracking-wider text-[#8C766B] font-bold block mt-0.5 md:mt-1 leading-tight">Serving Pure<br>Local Flavors</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full text-[#FFF9F2] py-3 md:py-4 border-y border-[#7A2612] overflow-hidden sans-text font-bold text-[10px] md:text-xs uppercase tracking-[0.2em]" style="background-color: #5C1909 !important;">
+        <div class="marquee-inner">
+            <span class="mx-4 md:mx-8 flex items-center gap-2 md:gap-3">Smoky Jollof Rice <i class="fas fa-fire text-amber-500"></i></span>
+            <span class="mx-4 md:mx-8 flex items-center gap-2 md:gap-3">Sizzling Suya Platters <i class="fas fa-fire text-amber-500"></i></span>
+            <span class="mx-4 md:mx-8 flex items-center gap-2 md:gap-3">Egusi & Pounded Yam <i class="fas fa-fire text-amber-500"></i></span>
+            <span class="mx-4 md:mx-8 flex items-center gap-2 md:gap-3">Gourmet Fried Rice <i class="fas fa-fire text-amber-500"></i></span>
+            <span class="mx-4 md:mx-8 flex items-center gap-2 md:gap-3">Open Until 11 PM <i class="fas fa-clock text-amber-500"></i></span>
+            <span class="mx-4 md:mx-8 flex items-center gap-2 md:gap-3">Asun & Peppered Bites <i class="fas fa-pepper-hot text-amber-500"></i></span>
+            <span class="mx-4 md:mx-8 flex items-center gap-2 md:gap-3">Smoky Jollof Rice <i class="fas fa-fire text-amber-500"></i></span>
+            <span class="mx-4 md:mx-8 flex items-center gap-2 md:gap-3">Sizzling Suya Platters <i class="fas fa-fire text-amber-500"></i></span>
+            <span class="mx-4 md:mx-8 flex items-center gap-2 md:gap-3">Egusi & Pounded Yam <i class="fas fa-fire text-amber-500"></i></span>
+            <span class="mx-4 md:mx-8 flex items-center gap-2 md:gap-3">Gourmet Fried Rice <i class="fas fa-fire text-amber-500"></i></span>
+            <span class="mx-4 md:mx-8 flex items-center gap-2 md:gap-3">Open Until 11 PM <i class="fas fa-clock text-amber-500"></i></span>
+            <span class="mx-4 md:mx-8 flex items-center gap-2 md:gap-3">Asun & Peppered Bites <i class="fas fa-pepper-hot text-amber-500"></i></span>
+        </div>
+    </div>
+
+    <section id="about" class="px-4 sm:px-6 md:px-16 py-12 md:py-16 border-b border-[#EADCC9] pb-24 md:pb-16" style="background: transparent !important;">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 md:gap-12">
+            <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-[#EADCC9]">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="Rangohot Cozy Indoor Restaurant Seating Environment" class="w-full h-full object-cover">
+            </div>
+            
+            <div class="w-full">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="w-6 h-[1px] bg-[#B24500]"></span>
+                    <span class="sans-text text-xs uppercase tracking-widest font-bold text-[#B24500]">Our Kitchen</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif text-[#5C1909] mb-4 md:mb-6">A warm corner of Lagos where every plate tells a story.</h2>
+                <p class="sans-text text-sm md:text-base text-[#6B564C] leading-relaxed mb-6 md:mb-8">
+                    We season our grills and slow-cook our stews throughout the day so the aroma of authentic Nigerian cooking hits you the moment you pull up. Our chefs pair high-quality local ingredients with time-tested recipes to make meals that bring people together.
+                </p>
+                
+                <div class="grid grid-cols-3 gap-2 sm:gap-4 border-b border-[#EADCC9] pb-6 mb-6 text-center">
+                    <div>
+                        <div class="text-2xl md:text-3xl font-serif text-[#5C1909] font-bold">11</div>
+                        <div class="sans-text text-[9px] md:text-[10px] uppercase tracking-wider text-[#8C766B] font-semibold">Years Serving</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl md:text-3xl font-serif text-[#5C1909] font-bold">40+</div>
+                        <div class="sans-text text-[9px] md:text-[10px] uppercase tracking-wider text-[#8C766B] font-semibold">House Dishes</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl md:text-3xl font-serif text-[#5C1909] font-bold text-amber-600">5.0</div>
+                        <div class="sans-text text-[9px] md:text-[10px] uppercase tracking-wider text-[#8C766B] font-semibold">Google Rating</div>
+                    </div>
+                </div>
+
+                <div class="border-l-2 border-[#5C1909] pl-4 italic text-xs md:text-sm text-[#443630] sans-text">
+                    <p>"The food is spectacular. The smoky jollof and tender goat meat keep us driving down the expressway every single weekend."</p>
+                    <span class="block text-[10px] md:text-xs font-bold text-[#5C1909] mt-2 not-italic">— Boyejo D., Google Maps Reviewer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservations" class="px-4 sm:px-6 md:px-16 py-10 md:py-16 max-w-7xl mx-auto pb-28 md:pb-16" style="background: transparent !important;">
+        <div class="w-full rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-16 text-white flex flex-col lg:flex-row justify-between items-center gap-6 md:gap-8 shadow-xl" style="background: linear-gradient(135deg, #B24500 0%, #E07A2F 100%) !important;">
+            <div class="max-w-xl text-center lg:text-left">
+                <div class="sans-text text-[11px] md:text-xs uppercase tracking-widest font-bold opacity-90 mb-2">Reserve Your Table</div>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif leading-tight mb-3 md:mb-4">Bring the family. We'll set the table.</h2>
+                <p class="sans-text text-xs md:text-sm opacity-90 leading-relaxed">Whether it's a quick lunch on the way home or a big Saturday gathering, we'll save you the warmest seat in the house with food served fresh and hot.</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto items-stretch sans-text text-sm">
+                <a href="https://wa.me/2349112111133?text=Hello,%20I'd%20like%20to%20book%20a%20table%20reservation" class="bg-white text-[#B24500] font-bold px-6 md:px-8 py-3.5 md:py-4 rounded-full text-center hover:bg-[#FFF9F2] transition shadow-md">
+                    Book A Table <i class="fas fa-arrow-right text-xs ml-1"></i>
+                </a>
+                <a href="tel:09112111133" class="border border-white text-white font-bold px-6 md:px-8 py-3.5 md:py-4 rounded-full text-center hover:bg-white/10 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-phone-alt text-xs"></i> Call 0911 211 1133
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full border-t border-[#EADCC9] px-4 sm:px-6 md:px-16 py-10 md:py-16 sans-text text-sm text-[#6B564C] pb-24 md:pb-16" style="background: transparent !important;">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mb-10 md:mb-12">
+            <div class="col-span-1 sm:col-span-2 md:col-span-1">
+                <h3 class="font-serif text-lg md:text-xl text-[#5C1909] font-bold mb-3 md:mb-4">Rangohot</h3>
+                <p class="text-xs leading-relaxed max-w-xs">A warm corner of Sangotedo serving rich firewood jollof, premium grills, and timeless Nigerian classics made for sharing.</p>
+                <div class="flex gap-3 mt-4">
+                    <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-full border border-[#EADCC9] flex items-center justify-center text-[#5C1909] hover:bg-[#5C1909] hover:text-white transition"><i class="fab fa-instagram text-xs"></i></a>
+                    <a href="tel:09112111133" class="w-8 h-8 rounded-full border border-[#EADCC9] flex items-center justify-center text-[#5C1909] hover:bg-[#5C1909] hover:text-white transition"><i class="fas fa-phone text-xs"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-[11px] md:text-xs uppercase tracking-widest font-bold text-[#B24500] mb-3 md:mb-4">Visit Us</h4>
+                <p class="text-xs font-semibold text-[#5C1909] mb-2"><i class="fas fa-map-marker-alt mr-1.5"></i> Lekki–Epe Expy, Sangotedo, Lagos</p>
+                <p class="text-xs"><i class="fas fa-clock mr-1.5"></i> Open daily · Closes 11 pm</p>
+            </div>
+            
+            <div>
+                <h4 class="text-[11px] md:text-xs uppercase tracking-widest font-bold text-[#B24500] mb-3 md:mb-4">Explore</h4>
+                <ul class="text-xs space-y-2 font-medium text-[#5C1909]">
+                    <li><a href="menu.html" class="hover:underline">Menu</a></li>
+                    <li><a href="#about" class="hover:underline">About</a></li>
+                    <li><a href="#reservations" class="hover:underline">Reservations</a></li>
+                    <li><a href="https://wa.me/2349112111133" class="hover:underline text-green-600">WhatsApp Order</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto border-t border-[#EADCC9] pt-6 text-center text-[10px] md:text-[11px] text-[#8C766B]">
+            &copy; 2026 Rangohot Restaurant. All Rights Reserved. Built to sell.
+        </div>
+    </footer>
+
+</body>
+</html>
